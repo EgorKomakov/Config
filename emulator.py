@@ -20,9 +20,9 @@ def main():
         if cmd == 'ls':
             files = ls(vfs)
             print('\n'.join(files))
-        elif cmd == 'cd':
+        elif cmd.startswith('cd'):
             if len(command) < 2 or not cd(vfs, command[1]):
-                print(f"cd: no such file or directory: {command[1]}")
+                print(f"{command[1]}")
         elif cmd == 'exit':
             exit_shell()
         elif cmd == 'cal':
