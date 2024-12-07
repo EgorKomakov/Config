@@ -1,6 +1,20 @@
 {
-    "SERVERNAME": "MyServer",
-    "MAXCONNECTIONS": 100,
-    "ALLOWEDIPS": ["192.168.1.1", "192.168.1.2"],
-    "TIMEOUT": 30
+    "a": 1,
+    "b": 2,
+    "sum_result": {
+        "operation": "addition",
+        "left": "a",
+        "right": "b"
+    },
+    "subtract_result": {
+        "operation": "subtraction",
+        "left": 5,
+        "right": 3
+    },
+    "multiply_result": {
+        "operation": "multiplication",
+        "left": 4,
+        "right": 2
+    },
+    "char_val": "ord(\"A\")"
 }
